@@ -11,6 +11,16 @@ pipeline {
 
     }
 
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/harshsingh32/jenkins-docker-project1.git'
+            }
+        }
+
+
     stages {
 
         stage('Build') {
