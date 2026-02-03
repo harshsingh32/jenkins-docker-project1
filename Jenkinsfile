@@ -5,6 +5,7 @@ pipeline {
         docker {
 
             image 'my-project'
+            args '-u root'
 
         }
 
